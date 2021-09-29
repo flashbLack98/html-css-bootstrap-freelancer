@@ -8,104 +8,156 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" > 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="container bg-dark d-flex py-3 align-items-center">
-            <h4 class="text-white">START BOOTSTRAP</h4>
-            <button class="ms-auto fs-5 btn btn-outline-light"><i class="bi bi-list"></i></button>
+        <nav class="container-fluid bg-dark d-flex py-3 align-items-center">
+            <h6 class="text-white fw-bold m-0 ">START BOOTSTRAP</h6>
+            <button class="fs-6 py-0 ms-auto btn btn-outline-light d-md-none"><i class="bi bi-list"></i></button>
+            <ul class=" ms-auto list-inline mb-0 d-none d-md-block">
+                <li class="list-inline-item"><a class="text-decoration-none text-white fw-bold" href="#PORTFOLIO">PORTFOLIO</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-white fw-bold" href="#ABOUT">ABOUT</a></li>
+                <li class="list-inline-item"><a class="text-decoration-none text-white fw-bold" href="#CONTACT">CONTACT</a></li>
+            </ul>
         </nav>
 
         <!-- HERO -->
-        <div class="container bg-success ">
-            <div class="row col-12 align-items-center flex-column">
-                <img class="w-25" src="img/avatar.svg" alt="user">
-                <h1 class="text-white text-center">START BOOTSTRAP</h1>
+        <div class="container-fluid bg-success ">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <img class="w-50 w-md-25" src="img/avatar.svg" alt="user">
+                    <h1 class="text-white text-center mt-2">START BOOTSTRAP</h1>
+                    <div class="my_star_lines my-2 d-flex justify-content-center align-items-center">
+                        <i class="bi bi-star-fill fs-1 fs-md-5 text-white"></i>
+                    </div>
+                    <p class="col-8 text-white text-center">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container col-12">
+        <br>
+        <!-- PORTFOLIO -->
+        <div id="PORTFOLIO" class="container">
             <div class="row">
-                <h3 class="text-center">PORTFOLIO</h3>
+                <h3 class="text-center mt-5 fs-2">PORTFOLIO</h3>
+                <div class="my_star_lines-dark mt-2 mb-1 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-star-fill fs-1 fs-md-5 text-primary"></i>
+                </div>
             </div>
             
-            <!-- PORTFOLIO -->
-            <div class="row">
-                <img class="my-2" src="img/cabin.png" alt="">
-                <img class="my-2" src="img/cabin.png" alt="">
-                <img class="my-2" src="img/cabin.png" alt="">
-                <img class="my-2" src="img/cabin.png" alt="">
-                <img class="my-2" src="img/cabin.png" alt="">
-                <img class="mt-2 mb-4" src="img/cabin.png" alt="">
-            </div>
+            <div class="row row-cols-md-2 row-cols-lg-3">
+                <img class="my-2 rounded-4" src="img/cabin.png" alt="">
+                <img class="my-2 rounded-4" src="img/cake.png" alt="">
+                <img class="my-2 rounded-4" src="img/circus.png" alt="">
+                <img class="my-2 rounded-4" src="img/game.png" alt="">
+                <img class="my-2 mb-md-5 rounded-4" src="img/safe.png" alt="">
+                <img class="mt-2 mb-4 mb-md-5 rounded-4" src="img/submarine.png" alt="">
+            </div>        
+        </div>
 
             <!-- ABOUT -->
-            <div class="container col-12 bg-success">
-                <div class="row justify-content-center">
-                    <h3 class="text-white text-center">ABOUT</h3>
-
-                    <p class="col-8 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores nostrum veritatis, labore delectus, quisquam quos id amet aspernatur, nulla iusto debitis atque quasi praesentium sapiente sint ducimus enim eveniet maiores?</p>
-
+        <div id="ABOUT" class="container-fluid bg-success ">
+            <div class="container">
+                <h3 class="text-white text-center pt-5">ABOUT</h3>
+                <div class="my_star_lines my-2 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-star-fill fs-1 fs-md-5 text-white"></i>
                 </div>
+
+
+                <div class="row row-cols-1 row-cols-md-1  justify-content-center">
+                
+                    <p class="col-8 col-md-5 text-white">Freelancer is a free bootstrap theme created by Start Bootstrap, The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    
+                    <p class="col-8 col-md-5 text-white">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting</p>
+                </div>
+                
             </div>
-
-
-            <!-- CONTACT ME -->
-            <div class="container col-12">
-
-                <div class="row">
-                    <h3 class="text-center">CONTACT ME</h3>
-
-                </div>
-
-                <div class="row justify-content-center">
-                    <form class="col-8">
-                        <label for="Name">Name</label><br>
-                        <input type="text" id="Name" name="Name"><br>
-                        <label for="Email">Email Address</label><br>
-                        <input type="email" id="Email" name="Email"><br>
-                        <label for="Phone Number">Phone Number</label><br>
-                        <input type="text" id="Phone Number" name="Phone Number"><br>
-                        <label for="Message">Message</label><br>
-                        <input type="text" id="Message" name="Message"><br>
-                    </form>
-
-                </div>
-
+            
+            <div class="text-center">
+                <button class="btn btn-outline-light my-4 "><i class="bi bi-cloud-arrow-down"></i> Download</button>
             </div>
-
-            
-            
         </div>
-        
-        
+
+
+        <!-- CONTACT ME -->
+        <div id="CONTACT" class="container-fluid"> 
+            <div class="container">
+                <h3 class="mt-3 text-center ">CONTACT ME</h3>
+                <div class="my_star_lines-dark my-2 d-flex justify-content-center align-items-center">
+                    <i class="bi bi-star-fill fs-1 fs-md-5 text-primary"></i>
+                </div>
+
+
+                <div class="row row-cols-1 justify-content-center">
+                
+                    
+                    <form class="col-8 col-md-10 mb-4">
+                        <div class="form-floating">
+                            <input class="form-control w-100 border-0 border-bottom" placeholder="Name" type="text" id="Name" name="Name"><br>
+                            <label class="form-label text-primary fw-bold" for="Name">Name</label><br>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input class="form-control w-100 border-0 border-bottom" placeholder="Email" type="email" id="Email" name="Email"><br>
+                            <label class="form-label text-primary fw-bold mt-2 " for="Email">Email</label><br>
+                        </div>
+                        
+                        <div class="form-floating">
+                            <input class="form-control w-100 border-0 border-bottom" placeholder="Phone Number" type="text" id="Phone Number" name="Phone Number"><br>
+                            <label class="form-label text-primary fw-bold mt-2 " for="Phone Number">Phone Number</label><br>
+                        </div>
+                        
+                        <div class="form-floating h-25">
+                            <textarea class="form-control w-100 h-100 border-0 border-bottom mb-5" placeholder="Message" type="text" id="Message" name="Message"></textarea><br>
+                            <label class="form-label text-primary fw-bold mt-2 " for="Message">Message</label><br>
+                        </div>
+
+                        <button class=" my-3 p-1 border-0 bg-success rounded text-white">Send</button>
+                    </form>
+                </div>
+            </div>                
+        </div>  
     </main>
     
     <footer>
-        <div class="container col-12 bg-primary">
-            <div class="row justify-content-center">
-                <h5 class="text-white">LOCATION</h5>
-                <p>Lorem ipsum, dolor sit </p>
-            </div>
-
-            <div class="row justify-content-center">
-                <h5 class="text-white">LOCATION</h5>
-                <p>Lorem ipsum, dolor sit </p>
-            </div>
-
-            <div class="row justify-content-center">
-                <h5 class="text-white">LOCATION</h5>
-                <p>Lorem ipsum, dolor sit </p>
+        <div class="container-fluid bg-primary">
+            <div class="container">
+                <div class="row text-center py-md-3">
+            
+                    <div class="col-md-4 my-2">
+                        <h6 class="text-white ">LOCATION</h6>
+                        <p class=" text-white">2215 John Daniel Drive Clark, MO 54243 </p>
+                    </div>
+        
+                    <div class="col-md-4 my-2">
+                        <h6 class="text-white ">AROUND THE WEB</h6>
+                        <ul class="p-0 text-white" >
+                            <li class="list-unstyled d-inline-block"><div><a class="link-light px-2  border border-1 border-white rounded-pill" href="#"><i class="fab fa-facebook-f"></i></a></div></li>
+                            <li class="list-unstyled d-inline-block"><a class="link-light px-2  border border-1 border-white rounded-pill" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li class="list-unstyled d-inline-block"><a class="link-light px-2  border border-1 border-white rounded-pill" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-unstyled d-inline-block"><a class="link-light px-2  border border-1 border-white rounded-pill" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>    
+                        
+                    </div>
+        
+                    <div class="col-md-4 my-2 ">
+                        <h6 class="text-white ">ABOUT FREELANCER</h6>
+                        <p class=" text-white">Freelancer is a free to use, open source Bootstrap theme created by <span><a class="link-success text-decoration-none" href="#">Start Bootstrap</a></span>.</p>
+                    </div>
+                </div>
             </div>
             
         </div>
         
-        <div class="container bg-dark">
-            <p class="text-white">lorem ipsum</p>
+        <div class="container-fluid bg-dark">
+            <div class="row justify-content-center">
+                <p class="text-white text-center py-4 col-8">Copyright &#169; Your Website 2019</p>
+            </div>
         </div>
 
     </footer>

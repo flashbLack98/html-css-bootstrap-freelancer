@@ -1,0 +1,54 @@
+body{
+    font-size: 12px;
+}
+
+:root{
+    --bs-dark-rgb: 44,62,80;
+    --bs-success-rgb: 26,188,156;
+    --bs-primary-rgb: 58,84,109;
+}
+
+.my_star_lines::before,.my_star_lines-dark::before{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 60px;
+    display: inline-block;
+    margin:0 10px ;
+    border-radius: 20%;
+}
+
+.my_star_lines::after,.my_star_lines-dark::after{
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 60px;
+    display: inline-block;
+    margin:0 10px ;
+    border-radius: 20%;
+}
+
+.my_star_lines-dark::before{
+    background-color:rgb(44,62,80) ;
+}
+
+
+.my_star_lines-dark::after{
+    background-color:rgb(44,62,80) ;
+}
+
+.rounded-4{
+    border-radius: 5%;
+}
+
+
+@media screen and (min-width:768px) {
+    .w-md-25{
+        width: 25% !important;
+    }
+    
+    .fs-md-5{
+        font-size: 1.25rem!important;
+    }
+}
+
